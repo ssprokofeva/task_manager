@@ -9,8 +9,9 @@ namespace task_manager
     public interface ITaskService
     {
         Task<List<Task>> GetAllTasksAsync();
-        Task AddTaskAsync(Task task);
+        Task AddTaskAsync(string title);
         Task UpdateTaskAsync(Task task);
-        Task DeleteTaskAsync(Task task);
+        Task DeleteTaskAsync(int id);
+        System.Threading.Tasks.Task AddTaskAsync(Task task);
     }
 }

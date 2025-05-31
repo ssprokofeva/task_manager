@@ -11,6 +11,7 @@ namespace task_manager
         Task<List<Task>> GetAllAsync();
         Task AddAsync(Task task);
         Task UpdateAsync(Task task);
-        Task DeleteAsync(Task task);
+        Task DeleteAsync(int id);
+       
     }
 }
